@@ -1,0 +1,30 @@
+{
+  "name": "carchost-hooks",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "start:dev": "npx nodemon src/index.js",
+    "start:tunnel": "npx lt --port 3097 --subdomain=leo-falco-97",
+    "lint-fix": "npx eslint --fix ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "0.27.2",
+    "express": "4.17.3",
+    "express-async-errors": "3.1.1"
+  },
+  "devDependencies": {
+    "eslint": "8.19.0",
+    "eslint-config-standard": "16.0.3",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "5.2.0",
+    "localtunnel": "2.0.2",
+    "nodemon": "2.0.15"
+  }
+}
